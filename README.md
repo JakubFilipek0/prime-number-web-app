@@ -3,7 +3,7 @@
 ## Project Description:
 The **Prime Number Calculation App** is a web-based Java application built with **Spring Boot**. The app allows users to input a numerical range and calculates all prime numbers within that range. The results are displayed in a user-friendly web interface powered by Thymeleaf templates.
 
-- **Java 11**: The application is built and tested using Java 11.
+- **Java 11**: The application is built using Java 11.
 - **Spring Boot 2.7.8**: Used as the main framework for creating web applications.
 
 ### Dependencies:
