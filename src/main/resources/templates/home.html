@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Calculator</title>
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <style>
+        /* Set the height for the html and body elements */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Make the body a flexbox container */
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: "Roboto", sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        /* Ensure the main content grows to take the available space */
+        main {
+            flex: 1;
+        }
+        header {
+            font-size: 42px;
+            padding: 7px;
+            margin-bottom: 10px;
+        }
+
+        header, footer {
+            background: black;
+            color: white;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        button {
+            background: black;
+            color: white;
+            border-radius: 5px;
+            padding: 2px 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Footer styling with flexbox */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main content will stretch to fill the available space -->
+<main>
+    <header>
+        Prime Number Calculator
+    </header>
+
+    <!-- Form for inputting the upper bound for prime number calculation -->
+    <form action="/calculate" method="post">
+        <label for="range">Enter the range:</label>
+        <input type="number" id="range" name="range" required>
+        <button type="submit">Calculate</button>
+    </form>
+
+    <!-- Display error message if any -->
+    <div th:if="${errorMessage}">
+        <p style="color: red;" th:text="${errorMessage}"></p>
+    </div>
+
+    <!-- Display the list of prime numbers if available -->
+    <div th:if="${primes}">
+        <h2>Result <span th:text="${range}"></span>:</h2>
+        <ul>
+            <li th:each="prime : ${primes}" th:text="${prime}"></li>
+        </ul>
+    </div>
+</main>
+
+<!-- Footer with clickable email -->
+<footer>
+    Page created by Jakub Filipek © 2024
+    <br>
+    Contact: <a href="mailto:filijaku@gmail.com">filijaku@gmail.com</a>
+</footer>
+
+</body>
+</html>
