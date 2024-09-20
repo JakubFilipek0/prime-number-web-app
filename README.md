@@ -20,7 +20,7 @@ To run the application, make sure you have the following installed:
    ```
 2. Navigate to the project directory:
    ```
-   cd PrimeNumberApp
+   cd prime-number-web-app
    ```
 3. Run the application using Maven:
    ```
