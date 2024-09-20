@@ -16,15 +16,15 @@ To run the application, make sure you have the following installed:
 ### Steps:
 1. Clone the repository to your local machine:
    ```
-   $ git clone https://github.com/JakubFilipek0/PrimeNumberApp.git
+   [$ git clone https://github.com/JakubFilipek0/PrimeNumberApp.git](https://github.com/JakubFilipek0/prime-number-web-app.git)
    ```
 2. Navigate to the project directory:
    ```
-   $ cd PrimeNumberApp
+   cd PrimeNumberApp
    ```
 3. Run the application using Maven:
    ```
-   $ mvn spring-boot:run
+   mvn spring-boot:run
    ```
 4. Open a web browser and go to:
    ```
