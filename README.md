@@ -22,7 +22,7 @@ To run the application, make sure you have the following installed:
    ```
    $ cd PrimeNumberApp
    ```
-3. Run the application using Maven
+3. Run the application using Maven:
    ```
    $ mvn spring-boot:run
    ```
@@ -32,9 +32,17 @@ To run the application, make sure you have the following installed:
    ```
 ## Project UI:
 
+### Neutral:
+
 ![image](https://github.com/user-attachments/assets/8822fb30-f9c4-4226-90c9-fa754eda7214)
 
+### Valid input:
+
 ![image](https://github.com/user-attachments/assets/f869112b-23f5-4e66-8497-02d3f4c1c772)
+
+### Invalid input:
+
+![image](https://github.com/user-attachments/assets/1ae26aeb-d091-43dd-a713-b9d85f312055)
 
 
 
