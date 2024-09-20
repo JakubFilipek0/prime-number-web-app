@@ -16,7 +16,7 @@ To run the application, make sure you have the following installed:
 ### Steps:
 1. Clone the repository to your local machine:
    ```
-   [$ git clone https://github.com/JakubFilipek0/PrimeNumberApp.git](https://github.com/JakubFilipek0/prime-number-web-app.git)
+   https://github.com/JakubFilipek0/prime-number-web-app.git
    ```
 2. Navigate to the project directory:
    ```
